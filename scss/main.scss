@@ -1,1 +1,17 @@
 // nesting //
+header {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+
+    nav {
+        justify-content: right;
+        margin-right: 50px;
+        margin-top: 20px;
+        ul {
+            list-style: none;
+            gap: 15px;
+            display: flex;
+        }
+    }
+}

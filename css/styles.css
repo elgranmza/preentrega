@@ -1,0 +1,12 @@
+header {
+  height: 300px;
+  display: flex;
+  justify-content: space-around; }
+  header nav {
+    justify-content: right;
+    margin-right: 50px;
+    margin-top: 20px; }
+    header nav ul {
+      list-style: none;
+      gap: 15px;
+      display: flex; }
