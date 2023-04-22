@@ -1,3 +1,5 @@
+
+@import "components/index";
 // nesting //
 header {
     height: 300px;
@@ -12,6 +14,34 @@ header {
             list-style: none;
             gap: 15px;
             display: flex;
+            text-decoration: none;
+            color: white;
+            font-family: 'Roboto Condensed', sans-serif;
+            text-transform: uppercase;
+
         }
+    }
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background: #333333;
+    background: -webkit-linear-gradient(to bottom, #dd1818, #333333);
+    background: linear-gradient(to bottom, #dd1818, #333333);
+    main{
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 1rem 3rem 3rem 3rem;
+        }
+    
+    footer{
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        font-family: 'Roboto Condensed', sans-serif;
     }
 }
