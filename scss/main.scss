@@ -1,15 +1,16 @@
-
 @import "components/index";
+@import "components/media-queris";
+
 // nesting //
 header {
-    height: 300px;
     display: flex;
     justify-content: space-around;
-
+    align-items: center;
     nav {
         justify-content: right;
         margin-right: 50px;
         margin-top: 20px;
+
         ul {
             list-style: none;
             gap: 15px;
@@ -18,25 +19,35 @@ header {
             color: white;
             font-family: 'Roboto Condensed', sans-serif;
             text-transform: uppercase;
-
+            @include mobile{
+                flex-direction: column;
+                align-items: end;
+                text-size-adjust: .5rem;
+            }             
         }
     }
 }
-body{
+
+.logo-nav {
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+    @include mobile{
+        display: none;
+    }
+    @include tablet{
+        display: none;
+    }  
+}
+
+body {
     display: flex;
     flex-direction: column;
     background: #333333;
     background: -webkit-linear-gradient(to bottom, #dd1818, #333333);
     background: linear-gradient(to bottom, #dd1818, #333333);
-    main{
-        height: 70vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-        margin: 1rem 3rem 3rem 3rem;
-        }
-    
-    footer{
+
+    footer {
         height: 30vh;
         display: flex;
         justify-content: center;
@@ -44,4 +55,34 @@ body{
         color: aliceblue;
         font-family: 'Roboto Condensed', sans-serif;
     }
+}
+
+.main-index {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.df-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.img-pre {
+    margin-left: 20px;
+}
+
+.descripcion-inicial {
+    text-align: center;
+    align-items: center;
 }
