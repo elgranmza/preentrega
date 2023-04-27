@@ -56,6 +56,23 @@ header {
     .logo-nav {
       display: none; } }
 
+.ubicacion-local {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+
+.ubicacion-local iframe {
+  left: 0;
+  top: 20px;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.txt-ubi {
+  text-align: center;
+  margin-left: 10px; }
+
 body {
   display: flex;
   flex-direction: column;

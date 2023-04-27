@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     nav {
         justify-content: right;
         margin-right: 50px;
@@ -19,11 +20,12 @@ header {
             color: white;
             font-family: 'Roboto Condensed', sans-serif;
             text-transform: uppercase;
-            @include mobile{
+
+            @include mobile {
                 flex-direction: column;
                 align-items: end;
                 text-size-adjust: .5rem;
-            }             
+            }
         }
     }
 }
@@ -32,12 +34,34 @@ header {
     width: 150px;
     height: 150px;
     padding-top: 10px;
-    @include mobile{
+
+    @include mobile {
         display: none;
     }
-    @include tablet{
+
+    @include tablet {
         display: none;
-    }  
+    }
+}
+
+.ubicacion-local {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.ubicacion-local iframe {
+    left:0;
+    top: 20px;;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.txt-ubi {
+    text-align: center;
+    margin-left: 10px;
 }
 
 body {
@@ -73,7 +97,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    @include mobile{
+
+    @include mobile {
         flex-direction: column;
     }
 }
