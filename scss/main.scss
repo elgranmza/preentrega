@@ -3,6 +3,17 @@
 @import "components/contacto";
 @import "components/quiensoy";
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 // nesting //
 header {
     display: flex;
@@ -31,6 +42,44 @@ header {
         }
     }
 }
+
+.quien_soy,
+.galeria,
+.productos,
+.contactoyturnos,
+.inicio {
+    text-decoration: none;
+    color:$color-pr-fuente ;
+}
+
+#inicio_1 {
+    color: $color-sec-fuente;
+    text-decoration: none;
+
+}
+
+#galeria_1 {
+    color: $color-sec-fuente;
+    text-decoration: none;
+}
+
+#productos_1 {
+    color: $color-sec-fuente;
+    text-decoration: none;
+    ;
+
+}
+
+#quien_soy_1 {
+    color: $color-sec-fuente;
+    text-decoration: none;
+}
+
+#contactoyturnos_1 {
+    color: $color-sec-fuente;
+    text-decoration: none;
+}
+
 body {
     display: flex;
     flex-direction: column;
