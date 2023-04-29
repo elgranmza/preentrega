@@ -1,4 +1,5 @@
 //estilo del index//
+@import "../components/media-queris";
 main{
     div{
         img{
@@ -8,17 +9,28 @@ main{
         }
     }
 }
-.contenedor {
-    height: 350vh;
+
+.main-index {
+    display: flex;
+    flex-direction: column;
 }
+
 .banner {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     object-fit: cover;
-    background-repeat: no-repeat;
 }
-.img-pre {
-    background-repeat: no-repeat;
-    background-size: contain;
+
+.df-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    @include mobile {
+        flex-direction: column;
+    }
 }
 .descripcion-inicial {
     text-align: center;
@@ -28,3 +40,4 @@ main{
     height: 100%;
     object-fit: cover;
 }
+
