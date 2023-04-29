@@ -1,6 +1,7 @@
 @import "components/index";
 @import "components/media-queris";
 @import "components/contacto";
+@import "components/quiensoy";
 
 // nesting //
 header {
@@ -28,6 +29,22 @@ header {
                 text-size-adjust: .5rem;
             }
         }
+    }
+}
+body {
+    display: flex;
+    flex-direction: column;
+    background: #333333;
+    background: -webkit-linear-gradient(to bottom, #dd1818, #333333);
+    background: linear-gradient(to bottom, #dd1818, #333333);
+
+    footer {
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-pr-fuente;
+        font-family: 'Roboto Condensed', sans-serif;
     }
 }
 

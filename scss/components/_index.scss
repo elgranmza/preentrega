@@ -1,5 +1,6 @@
 //estilo del index//
 @import "../components/media-queris";
+@import "../components/var";
 main{
     div{
         img{
@@ -39,5 +40,6 @@ main{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    color: $color-pr-fuente;
 }
 
