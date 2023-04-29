@@ -30,6 +30,10 @@ header {
     }
 }
 
+.menu {
+    text-decoration: none;
+}
+
 .logo-nav {
     width: 150px;
     height: 150px;
@@ -45,23 +49,29 @@ header {
 }
 
 .ubicacion-local {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
 }
 
 .ubicacion-local iframe {
-    left:0;
-    top: 20px;;
-    height:100%;
-    width:100%;
-    position:absolute;
+    left: 0;
+    top: 50px;
+    ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .txt-ubi {
+    margin-bottom: 20px;
     text-align: center;
-    margin-left: 10px;
+    color:#f2f2f2;
+
+    @include mobile {
+        font-size: 1rem;
+    }
 }
 
 body {
@@ -110,4 +120,79 @@ body {
 .descripcion-inicial {
     text-align: center;
     align-items: center;
+}
+/*formulario de contacto */
+.contact-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.contact-form label {
+    color: black;
+}
+
+.contact-form .heading {
+    font-size: 24px;
+    color: black;
+    ;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+    width: 200px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+/*seccion de contactos*/
+.contactanos{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
