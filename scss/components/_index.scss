@@ -37,6 +37,13 @@ main{
         flex-direction: column;
     }
 }
+.contenedor-img-pre {
+    @include mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .descripcion-inicial {
     text-align: center;
     align-items: center;
