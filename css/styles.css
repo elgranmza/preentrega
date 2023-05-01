@@ -1,3 +1,11 @@
+.txt-bienvenida {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #f2f2f2; }
+  @media screen and (max-width: 576px) {
+    .txt-bienvenida {
+      font-size: 1rem; } }
+
 main div img {
   width: 80%;
   height: 80%;

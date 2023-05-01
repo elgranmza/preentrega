@@ -2,6 +2,15 @@
 @import "components/media-queris";
 @import "components/var";
 
+.txt-bienvenida{
+    margin-bottom: 20px;
+    text-align: center;
+    color:$color-pr-fuente;
+
+    @include mobile {
+        font-size: 1rem;
+    }
+}
 main{
     div{
         img{
